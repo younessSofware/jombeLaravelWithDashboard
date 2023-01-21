@@ -1,0 +1,3192 @@
+name: Endpoints
+description: ''
+endpoints:
+  -
+    httpMethods:
+      - GET
+    uri: api/statistiques
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"StatusCode":200,"Status":true,"Result":{"freelancers":44,"jobs_free":53,"personals_files":5474,"companies":24},"Message":"messages.edited_succes"}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '59'
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: api/login
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters:
+      username:
+        name: username
+        description: ''
+        required: true
+        example: similique
+        type: string
+        custom: []
+      password:
+        name: password
+        description: ''
+        required: true
+        example: soluta
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: api/socialLogin
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters:
+      email:
+        name: email
+        description: ''
+        required: true
+        example: cum
+        type: string
+        custom: []
+      social_type:
+        name: social_type
+        description: ''
+        required: true
+        example: fuga
+        type: string
+        custom: []
+      social_id:
+        name: social_id
+        description: ''
+        required: true
+        example: dolorem
+        type: string
+        custom: []
+      photo:
+        name: photo
+        description: ''
+        required: true
+        example: quis
+        type: string
+        custom: []
+      fullname:
+        name: fullname
+        description: ''
+        required: true
+        example: vitae
+        type: string
+        custom: []
+      role:
+        name: role
+        description: ''
+        required: true
+        example: omnis
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: api/register
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters:
+      fullname:
+        name: fullname
+        description: 'يجب أن لا يتجاوز طول نص value 255 حروفٍ/حرفًا.'
+        required: true
+        example: fperaevwyklkmifppbkpssyiacvzaioxppfrigsdhzmdertaljemywnxyihbgfrfuafrzdafaciwhccbt
+        type: string
+        custom: []
+      username:
+        name: username
+        description: 'يجب أن لا يتجاوز طول نص value 255 حروفٍ/حرفًا.'
+        required: true
+        example: qvfcpfsxmnsyedkarzbdnxwjguqeafrfuwffxhybohpfttkirlvxkpld
+        type: string
+        custom: []
+      email:
+        name: email
+        description: 'يجب أن يكون value عنوان بريد إلكتروني صحيح البُنية يجب أن لا يتجاوز طول نص value 255 حروفٍ/حرفًا.'
+        required: true
+        example: ltmkwujgsmuftltfzundkeuj
+        type: string
+        custom: []
+      password:
+        name: password
+        description: 'الحقل value إذا توفّر <code>password_confirmation</code>.  يجب أن يتطابق الحقل value مع <code>password_confirmation</code> يجب أن يكون طول نص value على الأقل 8 حروفٍ/حرفًا.'
+        required: true
+        example: o
+        type: string
+        custom: []
+      password_confirmation:
+        name: password_confirmation
+        description: 'يجب أن يكون طول نص value على الأقل 6 حروفٍ/حرفًا.'
+        required: true
+        example: ''
+        type: string
+        custom: []
+      role:
+        name: role
+        description: ''
+        required: true
+        example: sunt
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: api/adsJobs
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"StatusCode":200,"Status":true,"Result":{"current_page":1,"data":[{"id":27,"title":"\u0645\u0647\u0646\u062f\u0633 \u0643\u0645\u0628\u064a\u0648\u062a\u0631","description":"\u0647\u0646\u062f\u0633\u0629 \u0643\u0645\u0628\u064a\u0648\u062a\u0631","requirement":null,"yearsOfExperiences":2,"workTime":9,"created_at":"2022-09-30T08:14:00.000000Z","updated_at":"2022-12-03T11:02:54.000000Z","user_id":74,"isSpecial":0,"user":{"id":74,"email":"q8tech14@gmail.com","username":"kuwait Tech","email_verified_at":"2022-09-30T02:11:27.000000Z","role":2,"country":null,"phone":null,"fullname":"kuwait Tech","gender":null,"social_type":"GOOGLE","social_id":"CPEukp6MzaYMZKb66DChkwxzS9g1","photo":"https:\/\/lh3.googleusercontent.com\/a-\/ACNPEu9Vv9tphd3J_pwVZtXbcaW-gCn0tLi8SDAzANLYfw=s96-c","dob":null,"created_at":"2022-09-30T02:02:21.000000Z","updated_at":"2022-11-10T22:34:56.000000Z","verifyCode":123456,"active":0,"createdByAdmin":null}},{"id":32,"title":"\u0645\u0633\u0626\u0648\u0644 \u0639\u0642\u0627\u0631\u064a","description":"\u0627\u0644\u0628\u062d\u062b \u0639\u0646 \u0639\u0642\u0627\u0631\u0627\u062a \u0644\u0644\u0634\u0631\u0627\u0621 \u0627\u0648 \u0627\u0644\u0628\u064a\u0639 \u0627\u0648 \u0627\u0644\u062a\u0627\u062c\u064a\u0631","requirement":"\u062f\u0631\u0627\u064a\u0629 \u0628\u0645\u0646\u0627\u0637\u0642 \u0627\u0644\u0643\u0648\u064a\u062a \n\u0645\u0639\u0631\u0641\u0629 \u0628\u0627\u0644\u0645\u0643\u0627\u062a\u0628 \u0648\u0627\u0644\u0645\u0624\u0633\u0633\u0627\u0627\u062a \u0627\u0644\u0639\u0642\u0627\u0631\u064a\u0629","yearsOfExperiences":5,"workTime":8,"created_at":"2022-10-04T22:52:21.000000Z","updated_at":"2022-12-03T11:02:54.000000Z","user_id":77,"isSpecial":0,"user":{"id":77,"email":"fahed.saad.alkandry@gmail.com","username":"fahed","email_verified_at":null,"role":3,"country":null,"phone":null,"fullname":"alfahed company","gender":null,"social_type":null,"social_id":null,"photo":"storage\/storage\/uploads\/tl (8).webp","dob":null,"created_at":"2022-10-04T14:31:21.000000Z","updated_at":"2022-10-18T13:59:36.000000Z","verifyCode":703703,"active":1,"createdByAdmin":null}},{"id":33,"title":"\u0645\u0633\u0626\u0648\u0644 \u0639\u0644\u0627\u0642\u0627\u062a \u0639\u0627\u0645\u0629","description":"\u0639\u062f\u0627\u062f \u0627\u0644\u0627\u0648\u0631\u0627\u0642 \u0627\u0644\u0645\u0647\u0645\u0647 \u0641\u064a \u0627\u0644\u0642\u0636\u0627\u064a\u0627 \n\u0645\u0628\u0627\u0634\u0631\u0629 \u0627\u0639\u0645\u0627\u0644 \u0627\u0644\u062f\u0639\u0627\u064a\u0629 \u0648\u0627\u0644\u0627\u0639\u0644\u0627\u0646\n\u0627\u0633\u062a\u0642\u0628\u0627\u0644 \u0627\u0644\u0636\u064a\u0648\u0641 \u062f\u0627\u062e\u0644 \u0627\u0644\u0634\u0631\u0643\u0629\n\u0627\u0639\u062f\u0627\u062f \u0627\u0644\u0643\u062a\u064a\u0628\u0627\u062a \u0627\u0644\u0627\u0631\u0634\u0627\u062f\u064a\u0629","requirement":null,"yearsOfExperiences":12,"workTime":6,"created_at":"2022-10-04T23:49:40.000000Z","updated_at":"2022-11-03T17:47:54.000000Z","user_id":79,"isSpecial":0,"user":{"id":79,"email":"khaled.1990@example.com","username":"khaled","email_verified_at":null,"role":2,"country":"\u062f\u0648\u0644\u0629 \u0627\u0644\u0643\u0648\u064a\u062a","phone":"53624198","fullname":"\u062e\u0627\u0644\u062f \u062a\u0631\u0643\u064a \u0627\u0644\u0638\u0641\u064a\u0631\u064a","gender":"\u0630\u0643\u0631","social_type":null,"social_id":null,"photo":"storage\/storage\/uploads\/Screenshot (25).png-2022-10-06 09:51:22","dob":"1992-01-04","created_at":"2022-10-04T17:23:21.000000Z","updated_at":"2022-11-10T22:34:56.000000Z","verifyCode":126229,"active":0,"createdByAdmin":null}},{"id":34,"title":"\u0633\u0643\u0631\u062a\u0627\u0631\u064a\u0629","description":"\u062a\u0646\u0638\u064a\u0645 \u0627\u0644\u0645\u0648\u0627\u0639\u064a\u062f \u0627\u0631\u0633\u0627\u0644 \u0627\u0644\u0628\u0631\u064a\u062f \u0627\u0633\u0642\u0628\u0627\u0644 \u0627\u0644\u0636\u064a\u0648\u0641","requirement":null,"yearsOfExperiences":15,"workTime":8,"created_at":"2022-10-05T00:19:08.000000Z","updated_at":"2022-10-05T00:19:08.000000Z","user_id":80,"isSpecial":0,"user":{"id":80,"email":"shikha.ku23@example.com","username":"shikha","email_verified_at":null,"role":2,"country":"\u062f\u0648\u0644\u0629 \u0627\u0644\u0643\u0648\u064a\u062a","phone":"66852399","fullname":"shikha fahed almotery","gender":"\u0627\u0646\u062b\u0649","social_type":null,"social_id":null,"photo":"storage\/storage\/uploads\/187c1c77-458b-4a01-9919-7cb98f1b5ce8.jpg-2022-10-06 08:16:20","dob":"1993-10-12","created_at":"2022-10-04T17:54:36.000000Z","updated_at":"2022-10-06T15:16:20.000000Z","verifyCode":378376,"active":1,"createdByAdmin":null}},{"id":35,"title":"\u0633\u0627\u0626\u0642\u0648\u0646","description":"\u0642\u064a\u0627\u062f\u0629 \u0633\u064a\u0627\u0631\u0629 \u0644\u062a\u0648\u0635\u064a\u0644 \u0627\u0644\u0637\u0644\u0628\u0627\u062a","requirement":"\u0631\u062e\u0635\u0629 \u0642\u064a\u0627\u062f\u0629 \n\u0645\u0639\u0631\u0641\u0629 \u0628\u0645\u0646\u0627\u0637\u0642 \u0627\u0644\u0643\u0648\u064a\u062a","yearsOfExperiences":1,"workTime":10,"created_at":"2022-10-05T00:43:09.000000Z","updated_at":"2022-10-06T20:23:16.000000Z","user_id":81,"isSpecial":0,"user":{"id":81,"email":"elkhaled.talabat@example.com","username":"harby","email_verified_at":null,"role":3,"country":null,"phone":null,"fullname":"\u0634\u0631\u0643\u0629 \u0627\u0644\u062e\u0627\u0644\u062f \u0644\u062a\u0648\u0635\u064a\u0644 \u0627\u0644\u0637\u0644\u0628\u0627\u062a","gender":null,"social_type":null,"social_id":null,"photo":"storage\/storage\/uploads\/Screenshot (7).png","dob":null,"created_at":"2022-10-04T18:24:20.000000Z","updated_at":"2022-10-10T18:08:33.000000Z","verifyCode":948207,"active":1,"createdByAdmin":null}},{"id":36,"title":"\u0645\u062d\u0627\u0633\u0628","description":"\u0627\u062f\u0627\u0631\u0629 \u0627\u0644\u062c\u062f\u0627\u0648\u0644 \u0648\u0627\u0644\u062a\u0642\u0627\u0631\u064a\u0631 \u0627\u0644\u0645\u0627\u0644\u064a\u0629\n\u0627\u0639\u062f\u0627\u062f \u0627\u0644\u0645\u0648\u0627\u0632\u0646\u0627\u062a","requirement":null,"yearsOfExperiences":15,"workTime":8,"created_at":"2022-10-05T01:19:10.000000Z","updated_at":"2022-10-05T01:19:10.000000Z","user_id":82,"isSpecial":0,"user":{"id":82,"email":"feesal.alshemry@example.com","username":"feesal","email_verified_at":null,"role":2,"country":"\u062f\u0648\u0644\u0629 \u0627\u0644\u0643\u0648\u064a\u062a","phone":"99536521","fullname":"\u0641\u064a\u0635\u0644 \u0645\u0637\u0644\u0642 \u0627\u0644\u0634\u0645\u0631\u064a","gender":"\u0630\u0643\u0631","social_type":null,"social_id":null,"photo":"storage\/storage\/uploads\/189a1693-4f49-41d4-9970-76eb03eed9fe.jpg-2022-10-06 07:33:28","dob":"1996-09-05","created_at":"2022-10-04T18:48:47.000000Z","updated_at":"2022-10-06T14:33:28.000000Z","verifyCode":264784,"active":1,"createdByAdmin":null}}],"first_page_url":"https:\/\/apiv2.jobme.me\/api\/adsJobs?page=1","from":1,"last_page":9,"last_page_url":"https:\/\/apiv2.jobme.me\/api\/adsJobs?page=9","links":[{"url":null,"label":"&laquo; \u0627\u0644\u0633\u0627\u0628\u0642","active":false},{"url":"https:\/\/apiv2.jobme.me\/api\/adsJobs?page=1","label":"1","active":true},{"url":"https:\/\/apiv2.jobme.me\/api\/adsJobs?page=2","label":"2","active":false},{"url":"https:\/\/apiv2.jobme.me\/api\/adsJobs?page=3","label":"3","active":false},{"url":"https:\/\/apiv2.jobme.me\/api\/adsJobs?page=4","label":"4","active":false},{"url":"https:\/\/apiv2.jobme.me\/api\/adsJobs?page=5","label":"5","active":false},{"url":"https:\/\/apiv2.jobme.me\/api\/adsJobs?page=6","label":"6","active":false},{"url":"https:\/\/apiv2.jobme.me\/api\/adsJobs?page=7","label":"7","active":false},{"url":"https:\/\/apiv2.jobme.me\/api\/adsJobs?page=8","label":"8","active":false},{"url":"https:\/\/apiv2.jobme.me\/api\/adsJobs?page=9","label":"9","active":false},{"url":"https:\/\/apiv2.jobme.me\/api\/adsJobs?page=2","label":"\u0627\u0644\u062a\u0627\u0644\u064a &raquo;","active":false}],"next_page_url":"https:\/\/apiv2.jobme.me\/api\/adsJobs?page=2","path":"https:\/\/apiv2.jobme.me\/api\/adsJobs","per_page":6,"prev_page_url":null,"to":6,"total":52},"Message":"\u062a\u0645 \u0627\u0631\u062c\u0627\u0639 \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0628\u0646\u062c\u0627\u062d"}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '58'
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/adsJobs/{id}'
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the adsJob.'
+        required: true
+        example: qui
+        type: string
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 500
+        content: |-
+          {
+              "message": "Call to a member function setAttribute() on null",
+              "exception": "Error",
+              "file": "C:\\xampp\\htdocs\\jobme\\app\\Http\\Controllers\\AdsJobsController.php",
+              "line": 95,
+              "trace": [
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php",
+                      "line": 54,
+                      "function": "show",
+                      "class": "App\\Http\\Controllers\\AdsJobsController",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php",
+                      "line": 45,
+                      "function": "callAction",
+                      "class": "Illuminate\\Routing\\Controller",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php",
+                      "line": 262,
+                      "function": "dispatch",
+                      "class": "Illuminate\\Routing\\ControllerDispatcher",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php",
+                      "line": 205,
+                      "function": "runController",
+                      "class": "Illuminate\\Routing\\Route",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
+                      "line": 721,
+                      "function": "run",
+                      "class": "Illuminate\\Routing\\Route",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 128,
+                      "function": "Illuminate\\Routing\\{closure}",
+                      "class": "Illuminate\\Routing\\Router",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\app\\Http\\Middleware\\ChangeLanguage.php",
+                      "line": 26,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 167,
+                      "function": "handle",
+                      "class": "App\\Http\\Middleware\\ChangeLanguage",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\app\\Http\\Middleware\\LogApi.php",
+                      "line": 20,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 167,
+                      "function": "handle",
+                      "class": "App\\Http\\Middleware\\LogApi",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php",
+                      "line": 50,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 167,
+                      "function": "handle",
+                      "class": "Illuminate\\Routing\\Middleware\\SubstituteBindings",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php",
+                      "line": 127,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php",
+                      "line": 103,
+                      "function": "handleRequest",
+                      "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php",
+                      "line": 55,
+                      "function": "handleRequestUsingNamedLimiter",
+                      "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 167,
+                      "function": "handle",
+                      "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\sanctum\\src\\Http\\Middleware\\EnsureFrontendRequestsAreStateful.php",
+                      "line": 33,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 128,
+                      "function": "Laravel\\Sanctum\\Http\\Middleware\\{closure}",
+                      "class": "Laravel\\Sanctum\\Http\\Middleware\\EnsureFrontendRequestsAreStateful",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 103,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\sanctum\\src\\Http\\Middleware\\EnsureFrontendRequestsAreStateful.php",
+                      "line": 34,
+                      "function": "then",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 167,
+                      "function": "handle",
+                      "class": "Laravel\\Sanctum\\Http\\Middleware\\EnsureFrontendRequestsAreStateful",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 103,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
+                      "line": 723,
+                      "function": "then",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
+                      "line": 698,
+                      "function": "runRouteWithinStack",
+                      "class": "Illuminate\\Routing\\Router",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
+                      "line": 662,
+                      "function": "runRoute",
+                      "class": "Illuminate\\Routing\\Router",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
+                      "line": 651,
+                      "function": "dispatchToRoute",
+                      "class": "Illuminate\\Routing\\Router",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php",
+                      "line": 167,
+                      "function": "dispatch",
+                      "class": "Illuminate\\Routing\\Router",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 128,
+                      "function": "Illuminate\\Foundation\\Http\\{closure}",
+                      "class": "Illuminate\\Foundation\\Http\\Kernel",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php",
+                      "line": 21,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php",
+                      "line": 31,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 167,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php",
+                      "line": 21,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php",
+                      "line": 40,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 167,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\TrimStrings",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php",
+                      "line": 27,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 167,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php",
+                      "line": 86,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 167,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\fruitcake\\laravel-cors\\src\\HandleCors.php",
+                      "line": 52,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 167,
+                      "function": "handle",
+                      "class": "Fruitcake\\Cors\\HandleCors",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php",
+                      "line": 39,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 167,
+                      "function": "handle",
+                      "class": "Illuminate\\Http\\Middleware\\TrustProxies",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 103,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php",
+                      "line": 142,
+                      "function": "then",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php",
+                      "line": 111,
+                      "function": "sendRequestThroughRouter",
+                      "class": "Illuminate\\Foundation\\Http\\Kernel",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php",
+                      "line": 299,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Kernel",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php",
+                      "line": 287,
+                      "function": "callLaravelOrLumenRoute",
+                      "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php",
+                      "line": 89,
+                      "function": "makeApiCall",
+                      "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php",
+                      "line": 45,
+                      "function": "makeResponseCall",
+                      "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php",
+                      "line": 35,
+                      "function": "makeResponseCallIfConditionsPass",
+                      "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Extractor.php",
+                      "line": 222,
+                      "function": "__invoke",
+                      "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Extractor.php",
+                      "line": 179,
+                      "function": "iterateThroughStrategies",
+                      "class": "Knuckles\\Scribe\\Extracting\\Extractor",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Extractor.php",
+                      "line": 116,
+                      "function": "fetchResponses",
+                      "class": "Knuckles\\Scribe\\Extracting\\Extractor",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\knuckleswtf\\scribe\\src\\GroupedEndpoints\\GroupedEndpointsFromApp.php",
+                      "line": 123,
+                      "function": "processRoute",
+                      "class": "Knuckles\\Scribe\\Extracting\\Extractor",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\knuckleswtf\\scribe\\src\\GroupedEndpoints\\GroupedEndpointsFromApp.php",
+                      "line": 80,
+                      "function": "extractEndpointsInfoFromLaravelApp",
+                      "class": "Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\knuckleswtf\\scribe\\src\\GroupedEndpoints\\GroupedEndpointsFromApp.php",
+                      "line": 56,
+                      "function": "extractEndpointsInfoAndWriteToDisk",
+                      "class": "Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\knuckleswtf\\scribe\\src\\Commands\\GenerateDocumentation.php",
+                      "line": 55,
+                      "function": "get",
+                      "class": "Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php",
+                      "line": 36,
+                      "function": "handle",
+                      "class": "Knuckles\\Scribe\\Commands\\GenerateDocumentation",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php",
+                      "line": 40,
+                      "function": "Illuminate\\Container\\{closure}",
+                      "class": "Illuminate\\Container\\BoundMethod",
+                      "type": "::"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php",
+                      "line": 93,
+                      "function": "unwrapIfClosure",
+                      "class": "Illuminate\\Container\\Util",
+                      "type": "::"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php",
+                      "line": 37,
+                      "function": "callBoundMethod",
+                      "class": "Illuminate\\Container\\BoundMethod",
+                      "type": "::"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php",
+                      "line": 653,
+                      "function": "call",
+                      "class": "Illuminate\\Container\\BoundMethod",
+                      "type": "::"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php",
+                      "line": 136,
+                      "function": "call",
+                      "class": "Illuminate\\Container\\Container",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\symfony\\console\\Command\\Command.php",
+                      "line": 298,
+                      "function": "execute",
+                      "class": "Illuminate\\Console\\Command",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php",
+                      "line": 121,
+                      "function": "run",
+                      "class": "Symfony\\Component\\Console\\Command\\Command",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\symfony\\console\\Application.php",
+                      "line": 1028,
+                      "function": "run",
+                      "class": "Illuminate\\Console\\Command",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\symfony\\console\\Application.php",
+                      "line": 299,
+                      "function": "doRunCommand",
+                      "class": "Symfony\\Component\\Console\\Application",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\symfony\\console\\Application.php",
+                      "line": 171,
+                      "function": "doRun",
+                      "class": "Symfony\\Component\\Console\\Application",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php",
+                      "line": 94,
+                      "function": "run",
+                      "class": "Symfony\\Component\\Console\\Application",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php",
+                      "line": 129,
+                      "function": "run",
+                      "class": "Illuminate\\Console\\Application",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\artisan",
+                      "line": 37,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Console\\Kernel",
+                      "type": "->"
+                  }
+              ]
+          }
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '57'
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: api/getCv
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 500
+        content: |-
+          {
+              "message": "Undefined variable: user_id",
+              "exception": "ErrorException",
+              "file": "C:\\xampp\\htdocs\\jobme\\app\\Http\\Controllers\\CvController.php",
+              "line": 25,
+              "trace": [
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\app\\Http\\Controllers\\CvController.php",
+                      "line": 25,
+                      "function": "handleError",
+                      "class": "Illuminate\\Foundation\\Bootstrap\\HandleExceptions",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php",
+                      "line": 54,
+                      "function": "index",
+                      "class": "App\\Http\\Controllers\\CvController",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php",
+                      "line": 45,
+                      "function": "callAction",
+                      "class": "Illuminate\\Routing\\Controller",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php",
+                      "line": 262,
+                      "function": "dispatch",
+                      "class": "Illuminate\\Routing\\ControllerDispatcher",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php",
+                      "line": 205,
+                      "function": "runController",
+                      "class": "Illuminate\\Routing\\Route",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
+                      "line": 721,
+                      "function": "run",
+                      "class": "Illuminate\\Routing\\Route",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 128,
+                      "function": "Illuminate\\Routing\\{closure}",
+                      "class": "Illuminate\\Routing\\Router",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\app\\Http\\Middleware\\ChangeLanguage.php",
+                      "line": 26,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 167,
+                      "function": "handle",
+                      "class": "App\\Http\\Middleware\\ChangeLanguage",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\app\\Http\\Middleware\\LogApi.php",
+                      "line": 20,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 167,
+                      "function": "handle",
+                      "class": "App\\Http\\Middleware\\LogApi",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php",
+                      "line": 50,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 167,
+                      "function": "handle",
+                      "class": "Illuminate\\Routing\\Middleware\\SubstituteBindings",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php",
+                      "line": 127,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php",
+                      "line": 103,
+                      "function": "handleRequest",
+                      "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php",
+                      "line": 55,
+                      "function": "handleRequestUsingNamedLimiter",
+                      "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 167,
+                      "function": "handle",
+                      "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\sanctum\\src\\Http\\Middleware\\EnsureFrontendRequestsAreStateful.php",
+                      "line": 33,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 128,
+                      "function": "Laravel\\Sanctum\\Http\\Middleware\\{closure}",
+                      "class": "Laravel\\Sanctum\\Http\\Middleware\\EnsureFrontendRequestsAreStateful",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 103,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\sanctum\\src\\Http\\Middleware\\EnsureFrontendRequestsAreStateful.php",
+                      "line": 34,
+                      "function": "then",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 167,
+                      "function": "handle",
+                      "class": "Laravel\\Sanctum\\Http\\Middleware\\EnsureFrontendRequestsAreStateful",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 103,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
+                      "line": 723,
+                      "function": "then",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
+                      "line": 698,
+                      "function": "runRouteWithinStack",
+                      "class": "Illuminate\\Routing\\Router",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
+                      "line": 662,
+                      "function": "runRoute",
+                      "class": "Illuminate\\Routing\\Router",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
+                      "line": 651,
+                      "function": "dispatchToRoute",
+                      "class": "Illuminate\\Routing\\Router",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php",
+                      "line": 167,
+                      "function": "dispatch",
+                      "class": "Illuminate\\Routing\\Router",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 128,
+                      "function": "Illuminate\\Foundation\\Http\\{closure}",
+                      "class": "Illuminate\\Foundation\\Http\\Kernel",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php",
+                      "line": 21,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php",
+                      "line": 31,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 167,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php",
+                      "line": 21,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php",
+                      "line": 40,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 167,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\TrimStrings",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php",
+                      "line": 27,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 167,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php",
+                      "line": 86,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 167,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\fruitcake\\laravel-cors\\src\\HandleCors.php",
+                      "line": 52,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 167,
+                      "function": "handle",
+                      "class": "Fruitcake\\Cors\\HandleCors",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php",
+                      "line": 39,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 167,
+                      "function": "handle",
+                      "class": "Illuminate\\Http\\Middleware\\TrustProxies",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+                      "line": 103,
+                      "function": "Illuminate\\Pipeline\\{closure}",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php",
+                      "line": 142,
+                      "function": "then",
+                      "class": "Illuminate\\Pipeline\\Pipeline",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php",
+                      "line": 111,
+                      "function": "sendRequestThroughRouter",
+                      "class": "Illuminate\\Foundation\\Http\\Kernel",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php",
+                      "line": 299,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Http\\Kernel",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php",
+                      "line": 287,
+                      "function": "callLaravelOrLumenRoute",
+                      "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php",
+                      "line": 89,
+                      "function": "makeApiCall",
+                      "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php",
+                      "line": 45,
+                      "function": "makeResponseCall",
+                      "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php",
+                      "line": 35,
+                      "function": "makeResponseCallIfConditionsPass",
+                      "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Extractor.php",
+                      "line": 222,
+                      "function": "__invoke",
+                      "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Extractor.php",
+                      "line": 179,
+                      "function": "iterateThroughStrategies",
+                      "class": "Knuckles\\Scribe\\Extracting\\Extractor",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Extractor.php",
+                      "line": 116,
+                      "function": "fetchResponses",
+                      "class": "Knuckles\\Scribe\\Extracting\\Extractor",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\knuckleswtf\\scribe\\src\\GroupedEndpoints\\GroupedEndpointsFromApp.php",
+                      "line": 123,
+                      "function": "processRoute",
+                      "class": "Knuckles\\Scribe\\Extracting\\Extractor",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\knuckleswtf\\scribe\\src\\GroupedEndpoints\\GroupedEndpointsFromApp.php",
+                      "line": 80,
+                      "function": "extractEndpointsInfoFromLaravelApp",
+                      "class": "Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\knuckleswtf\\scribe\\src\\GroupedEndpoints\\GroupedEndpointsFromApp.php",
+                      "line": 56,
+                      "function": "extractEndpointsInfoAndWriteToDisk",
+                      "class": "Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\knuckleswtf\\scribe\\src\\Commands\\GenerateDocumentation.php",
+                      "line": 55,
+                      "function": "get",
+                      "class": "Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php",
+                      "line": 36,
+                      "function": "handle",
+                      "class": "Knuckles\\Scribe\\Commands\\GenerateDocumentation",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php",
+                      "line": 40,
+                      "function": "Illuminate\\Container\\{closure}",
+                      "class": "Illuminate\\Container\\BoundMethod",
+                      "type": "::"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php",
+                      "line": 93,
+                      "function": "unwrapIfClosure",
+                      "class": "Illuminate\\Container\\Util",
+                      "type": "::"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php",
+                      "line": 37,
+                      "function": "callBoundMethod",
+                      "class": "Illuminate\\Container\\BoundMethod",
+                      "type": "::"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php",
+                      "line": 653,
+                      "function": "call",
+                      "class": "Illuminate\\Container\\BoundMethod",
+                      "type": "::"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php",
+                      "line": 136,
+                      "function": "call",
+                      "class": "Illuminate\\Container\\Container",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\symfony\\console\\Command\\Command.php",
+                      "line": 298,
+                      "function": "execute",
+                      "class": "Illuminate\\Console\\Command",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php",
+                      "line": 121,
+                      "function": "run",
+                      "class": "Symfony\\Component\\Console\\Command\\Command",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\symfony\\console\\Application.php",
+                      "line": 1028,
+                      "function": "run",
+                      "class": "Illuminate\\Console\\Command",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\symfony\\console\\Application.php",
+                      "line": 299,
+                      "function": "doRunCommand",
+                      "class": "Symfony\\Component\\Console\\Application",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\symfony\\console\\Application.php",
+                      "line": 171,
+                      "function": "doRun",
+                      "class": "Symfony\\Component\\Console\\Application",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php",
+                      "line": 94,
+                      "function": "run",
+                      "class": "Symfony\\Component\\Console\\Application",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php",
+                      "line": 129,
+                      "function": "run",
+                      "class": "Illuminate\\Console\\Application",
+                      "type": "->"
+                  },
+                  {
+                      "file": "C:\\xampp\\htdocs\\jobme\\artisan",
+                      "line": 37,
+                      "function": "handle",
+                      "class": "Illuminate\\Foundation\\Console\\Kernel",
+                      "type": "->"
+                  }
+              ]
+          }
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '56'
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+      - POST
+    uri: api/broadcasting/auth
+    metadata:
+      title: 'Authenticate the request for channel access.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: api/download
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: api/messageSeen
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: api/messages
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: api/messages
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/messages/{id}'
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the message.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/messages/{id}'
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the message.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: api/notifications
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: api/notifications/create
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/notifications/{id}'
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the notification.'
+        required: true
+        example: 2
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: api/notificationSeen
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: api/companyInfo
+    metadata:
+      title: 'Display a listing of the resource.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: api/companyInfo
+    metadata:
+      title: 'Store a newly created resource in storage.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters:
+      fullname:
+        name: fullname
+        description: ''
+        required: true
+        example: quis
+        type: string
+        custom: []
+      employment:
+        name: employment
+        description: ''
+        required: true
+        example: quis
+        type: string
+        custom: []
+      date:
+        name: date
+        description: 'الحقل value ليس تاريخًا صحيحًا.'
+        required: true
+        example: '2023-01-10T14:18:55'
+        type: string
+        custom: []
+      size:
+        name: size
+        description: ''
+        required: true
+        example: libero
+        type: string
+        custom: []
+      email:
+        name: email
+        description: ''
+        required: true
+        example: quo
+        type: string
+        custom: []
+      notes:
+        name: notes
+        description: ''
+        required: true
+        example: aliquam
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: api/subCompanyInfo
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters:
+      country:
+        name: country
+        description: ''
+        required: true
+        example: cumque
+        type: string
+        custom: []
+      city:
+        name: city
+        description: ''
+        required: true
+        example: illo
+        type: string
+        custom: []
+      employees:
+        name: employees
+        description: ''
+        required: true
+        example: quia
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: 'api/subCompanyInfo/{id}'
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the subCompanyInfo.'
+        required: true
+        example: et
+        type: string
+        custom: []
+    queryParameters: []
+    bodyParameters:
+      country:
+        name: country
+        description: ''
+        required: true
+        example: explicabo
+        type: string
+        custom: []
+      city:
+        name: city
+        description: ''
+        required: true
+        example: voluptatibus
+        type: string
+        custom: []
+      employees:
+        name: employees
+        description: ''
+        required: true
+        example: ut
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/subCompanyInfo/{id}'
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the subCompanyInfo.'
+        required: true
+        example: dolorem
+        type: string
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: api/plans
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/plans/{id}'
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the plan.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: api/paginateOrders
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: api/adsJobs
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters:
+      title:
+        name: title
+        description: 'يجب أن يكون طول نص value على الأقل 3 حروفٍ/حرفًا يجب أن لا يتجاوز طول نص value 255 حروفٍ/حرفًا.'
+        required: true
+        example: trymlxlvjaqiwnxrkaxmubcemjyozmuygaivftxidkpgceoafzgzuypgftpwphiqitfnsymx
+        type: string
+        custom: []
+      description:
+        name: description
+        description: 'يجب أن يكون طول نص value على الأقل 8 حروفٍ/حرفًا.'
+        required: true
+        example: bkvk
+        type: string
+        custom: []
+      requirement:
+        name: requirement
+        description: 'يجب أن يكون طول نص value على الأقل 8 حروفٍ/حرفًا.'
+        required: false
+        example: mjgqfl
+        type: string
+        custom: []
+      yearsOfExperiences:
+        name: yearsOfExperiences
+        description: ''
+        required: false
+        example: 89447261.008492
+        type: number
+        custom: []
+      workTime:
+        name: workTime
+        description: ''
+        required: true
+        example: 1.0
+        type: number
+        custom: []
+      username:
+        name: username
+        description: 'يجب أن لا يتجاوز طول نص value 255 حروفٍ/حرفًا.'
+        required: true
+        example: ucxzeyfxllsmveoqwjvfsgscdunqcuxhsdulfuhkuqgvzwlujzhctpqqywedwhzngrrqidgyazhgjuxbvqzgqztsomsctbulzncsqfwpffagnfsqcwpbswv
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - PUT
+      - PATCH
+    uri: 'api/adsJobs/{id}'
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the adsJob.'
+        required: true
+        example: architecto
+        type: string
+        custom: []
+    queryParameters: []
+    bodyParameters:
+      title:
+        name: title
+        description: 'يجب أن يكون طول نص value على الأقل 3 حروفٍ/حرفًا يجب أن لا يتجاوز طول نص value 255 حروفٍ/حرفًا.'
+        required: true
+        example: hpywxbqoobqptwhhzjdymgtvsvfnzzoswarqmdpuoxfmxgtsvixwvpnsaqfvbuievchbnwazmafxzmddwcpxhfwlrdjikwdtagkbdpsgupuexnjndrzoupyqzohbganqdooyskriggdwxafcvquaqfsozbikcvofqlcoychvxtwamgputcppcqwnwdmgdgopwnqrtosmpxdsvevztayrqicxosfonsgva
+        type: string
+        custom: []
+      description:
+        name: description
+        description: 'يجب أن يكون طول نص value على الأقل 8 حروفٍ/حرفًا.'
+        required: true
+        example: hsyw
+        type: string
+        custom: []
+      requirement:
+        name: requirement
+        description: 'يجب أن يكون طول نص value على الأقل 8 حروفٍ/حرفًا.'
+        required: false
+        example: ''
+        type: string
+        custom: []
+      yearsOfExperiences:
+        name: yearsOfExperiences
+        description: ''
+        required: false
+        example: 275363.8975039
+        type: number
+        custom: []
+      workTime:
+        name: workTime
+        description: ''
+        required: true
+        example: 535.94
+        type: number
+        custom: []
+      username:
+        name: username
+        description: 'يجب أن لا يتجاوز طول نص value 255 حروفٍ/حرفًا.'
+        required: true
+        example: fplgmwfpobsjrpvinpalpanmhfedsulsehsusnaiujpccvjtwpmfsqwezacozfezwlcwgfgxqmmstolhojnwbizmiljqdbuwwgsnjirufwbzbbtnbhoxhidxsjqsafytnbuywykpeefbsnnkqzhbsgjvptmslvrsdyqgocepfxgqqffczifuqxmdbducuyfchnwmrgkelfaf
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/adsJobs/{id}'
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the adsJob.'
+        required: true
+        example: dolorem
+        type: string
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: api/myfatorah
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: api/statusPayment
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: api/addThisAdsToSpecial
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: api/ApplyAndCancelJob
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: api/acceptAndRefuseOffer
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: api/myAdsJobs
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: api/myOffers
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: api/savedAds
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: api/adSaved
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: api/deleteCv
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: api/experiences
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: api/experiences
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters:
+      enterprise:
+        name: enterprise
+        description: ''
+        required: true
+        example: distinctio
+        type: string
+        custom: []
+      job:
+        name: job
+        description: ''
+        required: true
+        example: ea
+        type: string
+        custom: []
+      field:
+        name: field
+        description: ''
+        required: true
+        example: qui
+        type: string
+        custom: []
+      date_in:
+        name: date_in
+        description: 'الحقل value ليس تاريخًا صحيحًا.'
+        required: true
+        example: '2023-01-10T14:18:55'
+        type: string
+        custom: []
+      date_to:
+        name: date_to
+        description: 'الحقل value ليس تاريخًا صحيحًا يجب على الحقل value أن يكون تاريخًا لاحقًا للتاريخ <code>date_in</code>.'
+        required: true
+        example: '2055-01-30'
+        type: string
+        custom: []
+      desc_job:
+        name: desc_job
+        description: ''
+        required: true
+        example: nam
+        type: string
+        custom: []
+      country:
+        name: country
+        description: ''
+        required: true
+        example: vero
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/experiences/{id}'
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the experience.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - PUT
+      - PATCH
+    uri: 'api/experiences/{id}'
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the experience.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters:
+      enterprise:
+        name: enterprise
+        description: ''
+        required: true
+        example: accusantium
+        type: string
+        custom: []
+      job:
+        name: job
+        description: ''
+        required: true
+        example: rerum
+        type: string
+        custom: []
+      field:
+        name: field
+        description: ''
+        required: true
+        example: assumenda
+        type: string
+        custom: []
+      date_in:
+        name: date_in
+        description: 'الحقل value ليس تاريخًا صحيحًا.'
+        required: true
+        example: '2023-01-10T14:18:55'
+        type: string
+        custom: []
+      date_to:
+        name: date_to
+        description: 'الحقل value ليس تاريخًا صحيحًا يجب على الحقل value أن يكون تاريخًا لاحقًا للتاريخ <code>date_in</code>.'
+        required: true
+        example: '2062-08-04'
+        type: string
+        custom: []
+      desc_job:
+        name: desc_job
+        description: ''
+        required: true
+        example: placeat
+        type: string
+        custom: []
+      country:
+        name: country
+        description: ''
+        required: true
+        example: non
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/experiences/{id}'
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the experience.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: api/educations
+    metadata:
+      title: 'Display a listing of the resource.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: api/educations
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters:
+      university:
+        name: university
+        description: ''
+        required: true
+        example: et
+        type: string
+        custom: []
+      specialization:
+        name: specialization
+        description: ''
+        required: true
+        example: quia
+        type: string
+        custom: []
+      level:
+        name: level
+        description: ''
+        required: true
+        example: aspernatur
+        type: string
+        custom: []
+      date_in:
+        name: date_in
+        description: 'الحقل value ليس تاريخًا صحيحًا.'
+        required: true
+        example: '2023-01-10T14:18:55'
+        type: string
+        custom: []
+      date_to:
+        name: date_to
+        description: 'الحقل value ليس تاريخًا صحيحًا يجب على الحقل value أن يكون تاريخًا لاحقًا للتاريخ <code>date_in</code>.'
+        required: true
+        example: '2024-06-05'
+        type: string
+        custom: []
+      mark:
+        name: mark
+        description: ''
+        required: true
+        example: voluptate
+        type: string
+        custom: []
+      country:
+        name: country
+        description: ''
+        required: true
+        example: placeat
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/educations/{id}'
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the education.'
+        required: true
+        example: 2
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - PUT
+      - PATCH
+    uri: 'api/educations/{id}'
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the education.'
+        required: true
+        example: 2
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters:
+      university:
+        name: university
+        description: ''
+        required: true
+        example: consectetur
+        type: string
+        custom: []
+      specialization:
+        name: specialization
+        description: ''
+        required: true
+        example: eius
+        type: string
+        custom: []
+      level:
+        name: level
+        description: ''
+        required: true
+        example: omnis
+        type: string
+        custom: []
+      date_in:
+        name: date_in
+        description: 'الحقل value ليس تاريخًا صحيحًا.'
+        required: true
+        example: '2023-01-10T14:18:55'
+        type: string
+        custom: []
+      date_to:
+        name: date_to
+        description: 'الحقل value ليس تاريخًا صحيحًا يجب على الحقل value أن يكون تاريخًا لاحقًا للتاريخ <code>date_in</code>.'
+        required: true
+        example: '2061-02-18'
+        type: string
+        custom: []
+      mark:
+        name: mark
+        description: ''
+        required: true
+        example: in
+        type: string
+        custom: []
+      country:
+        name: country
+        description: ''
+        required: true
+        example: odio
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/educations/{id}'
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the education.'
+        required: true
+        example: 2
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: api/certificates
+    metadata:
+      title: 'Display a listing of the resource.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: api/certificates
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: ''
+        required: true
+        example: laudantium
+        type: string
+        custom: []
+      side:
+        name: side
+        description: ''
+        required: true
+        example: soluta
+        type: string
+        custom: []
+      date:
+        name: date
+        description: 'الحقل value ليس تاريخًا صحيحًا.'
+        required: true
+        example: '2023-01-10T14:18:55'
+        type: string
+        custom: []
+      field:
+        name: field
+        description: ''
+        required: true
+        example: similique
+        type: string
+        custom: []
+      description:
+        name: description
+        description: ''
+        required: true
+        example: fugit
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/certificates/{id}'
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the certificate.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - PUT
+      - PATCH
+    uri: 'api/certificates/{id}'
+    metadata:
+      title: 'Update the specified resource in storage.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the certificate.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: ''
+        required: true
+        example: facilis
+        type: string
+        custom: []
+      side:
+        name: side
+        description: ''
+        required: true
+        example: aut
+        type: string
+        custom: []
+      date:
+        name: date
+        description: 'الحقل value ليس تاريخًا صحيحًا.'
+        required: true
+        example: '2023-01-10T14:18:55'
+        type: string
+        custom: []
+      field:
+        name: field
+        description: ''
+        required: true
+        example: autem
+        type: string
+        custom: []
+      description:
+        name: description
+        description: ''
+        required: true
+        example: tempora
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/certificates/{id}'
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the certificate.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: api/skills
+    metadata:
+      title: 'Store a newly created resource in storage.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: ''
+        required: true
+        example: laborum
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/skills/{id}'
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the skill.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - PUT
+      - PATCH
+    uri: 'api/skills/{id}'
+    metadata:
+      title: 'Update the specified resource in storage.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the skill.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/skills/{id}'
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the skill.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: api/updateProfile
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters:
+      country:
+        name: country
+        description: ''
+        required: true
+        example: voluptas
+        type: string
+        custom: []
+      phone:
+        name: phone
+        description: ''
+        required: true
+        example: sunt
+        type: string
+        custom: []
+      gender:
+        name: gender
+        description: ''
+        required: true
+        example: est
+        type: string
+        custom: []
+      dob:
+        name: dob
+        description: 'الحقل value ليس تاريخًا صحيحًا.'
+        required: true
+        example: '2023-01-10T14:18:55'
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: api/verifyEmail
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters:
+      email:
+        name: email
+        description: ''
+        required: true
+        example: minus
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: api/VerifyCode
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters:
+      code:
+        name: code
+        description: 'يجب أن يكون طول نص value على الأقل 6 حروفٍ/حرفًا.'
+        required: true
+        example: ''
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: api/changePassword
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters:
+      password:
+        name: password
+        description: ''
+        required: true
+        example: itaque
+        type: string
+        custom: []
+      new_password:
+        name: new_password
+        description: 'الحقل value إذا توفّر <code>password_confirmation</code>.  يجب أن يتطابق الحقل value مع <code>password_confirmation</code> يجب أن يكون طول نص value على الأقل 8 حروفٍ/حرفًا.'
+        required: true
+        example: k
+        type: string
+        custom: []
+      password_confirmation:
+        name: password_confirmation
+        description: 'يجب أن يكون طول نص value على الأقل 6 حروفٍ/حرفًا.'
+        required: true
+        example: bol
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: api/logout
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: api/removeAccount
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: api/newNotAndMsg
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: api/reports
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: api/reports
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters:
+      title:
+        name: title
+        description: 'يجب أن لا يتجاوز طول نص value 255 حروفٍ/حرفًا.'
+        required: true
+        example: phisxyylbpdnbohxbtnc
+        type: string
+        custom: []
+      content:
+        name: content
+        description: 'يجب أن لا يتجاوز طول نص value 255 حروفٍ/حرفًا.'
+        required: true
+        example: shhewnyfqkdofgdagsdgdnhhmsoqbxfveytyhrpmvysgddtikfazcrzeknastrgujdznebmskoubwszicokvyik
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/reports/{id}'
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the report.'
+        required: true
+        example: 71
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
