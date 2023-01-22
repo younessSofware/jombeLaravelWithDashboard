@@ -67,6 +67,8 @@ class Kernel extends HttpKernel
         'confirmAccount' => \App\Http\Middleware\ConfirmAccount::class,
         'hasAds' => \App\Http\Middleware\HasAds::class,
         'cors' => \App\Http\Middleware\Cors::class,
-        'logApi' => \App\Http\Middleware\LogApi::class
+        'logApi' => \App\Http\Middleware\LogApi::class,
+         "isAdmin" => \App\Http\Middleware\isAdmin::class,
+
     ];
 }

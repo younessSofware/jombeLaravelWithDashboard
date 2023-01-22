@@ -31,7 +31,7 @@ class Subscribe extends Mailable
      */
     public function build()
     {
-        return $this->subject('Code of verification')->from('jobme@project.com')
+        return $this->subject('Code of verification')->from('email@jobme.me')
         ->markdown('emails.sendCode');
     }
 }

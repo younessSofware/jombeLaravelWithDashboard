@@ -1,0 +1,28 @@
+[21-Jan-2023 15:33:46 UTC] PHP Warning:  Uncaught ErrorException: require_once(/home4/jobmeme/public_html/api-jobme-meapiAdmin.php): failed to open stream: No such file or directory in /home4/jobmeme/public_html/api-jobme-me/routes/api.php:61
+Stack trace:
+#0 /home4/jobmeme/public_html/api-jobme-me/routes/api.php(61): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require_once(/h...', '/home4/jobmeme/...', 61, Array)
+#1 /home4/jobmeme/public_html/api-jobme-me/routes/api.php(61): require_once()
+#2 /home4/jobmeme/public_html/api-jobme-me/vendor/laravel/framework/src/Illuminate/Routing/Router.php(423): Illuminate\Routing\RouteFileRegistrar->{closure}(Object(Illuminate\Routing\Router))
+#3 /home4/jobmeme/public_html/api-jobme-me/vendor/laravel/framework/src/Illuminate/Routing/Router.php(382): Illuminate\Routing\Router->loadRoutes(Object(Closure))
+#4 /home4/jobmeme/public_html/api-jobme-me/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(261): Illuminate\Routing\Router->group(Array, Object(Closure))
+#5 /home4/jobmeme/pu in /home4/jobmeme/public_html/api-jobme-me/routes/api.php on line 61
+[21-Jan-2023 15:33:46 UTC] PHP Fatal error:  Illuminate\Routing\RouteFileRegistrar::{closure}(): Failed opening required '/home4/jobmeme/public_html/api-jobme-meapiAdmin.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home4/jobmeme/public_html/api-jobme-me/routes/api.php on line 61
+[21-Jan-2023 15:33:46 UTC] PHP Warning:  Uncaught ErrorException: require_once(/home4/jobmeme/public_html/api-jobme-meapiAdmin.php): failed to open stream: No such file or directory in /home4/jobmeme/public_html/api-jobme-me/routes/api.php:61
+Stack trace:
+#0 /home4/jobmeme/public_html/api-jobme-me/routes/api.php(61): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require_once(/h...', '/home4/jobmeme/...', 61, Array)
+#1 /home4/jobmeme/public_html/api-jobme-me/routes/api.php(61): require_once()
+#2 /home4/jobmeme/public_html/api-jobme-me/vendor/laravel/framework/src/Illuminate/Routing/Router.php(423): Illuminate\Routing\RouteFileRegistrar->{closure}(Object(Illuminate\Routing\Router))
+#3 /home4/jobmeme/public_html/api-jobme-me/vendor/laravel/framework/src/Illuminate/Routing/Router.php(382): Illuminate\Routing\Router->loadRoutes(Object(Closure))
+#4 /home4/jobmeme/public_html/api-jobme-me/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(261): Illuminate\Routing\Router->group(Array, Object(Closure))
+#5 /home4/jobmeme/pu in /home4/jobmeme/public_html/api-jobme-me/routes/api.php on line 61
+[21-Jan-2023 15:33:46 UTC] PHP Fatal error:  Illuminate\Routing\RouteFileRegistrar::{closure}(): Failed opening required '/home4/jobmeme/public_html/api-jobme-meapiAdmin.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home4/jobmeme/public_html/api-jobme-me/routes/api.php on line 61
+[21-Jan-2023 16:27:02 UTC] PHP Fatal error:  Cannot use App\Http\Controllers\CompanyController as CompanyController because the name is already in use in /home4/jobmeme/public_html/api-jobme-me/routes/api.php on line 28
+[21-Jan-2023 16:27:02 UTC] PHP Fatal error:  Cannot use App\Http\Controllers\CompanyController as CompanyController because the name is already in use in /home4/jobmeme/public_html/api-jobme-me/routes/api.php on line 28
+[21-Jan-2023 16:27:02 UTC] PHP Fatal error:  Cannot use App\Http\Controllers\CompanyController as CompanyController because the name is already in use in /home4/jobmeme/public_html/api-jobme-me/routes/api.php on line 28
+[21-Jan-2023 16:27:02 UTC] PHP Fatal error:  Cannot use App\Http\Controllers\CompanyController as CompanyController because the name is already in use in /home4/jobmeme/public_html/api-jobme-me/routes/api.php on line 28
+[21-Jan-2023 16:27:02 UTC] PHP Fatal error:  Cannot use App\Http\Controllers\CompanyController as CompanyController because the name is already in use in /home4/jobmeme/public_html/api-jobme-me/routes/api.php on line 28
+[21-Jan-2023 16:27:50 UTC] PHP Fatal error:  Cannot use App\Http\Controllers\ReportController as ReportController because the name is already in use in /home4/jobmeme/public_html/api-jobme-me/routes/api.php on line 29
+[21-Jan-2023 16:27:50 UTC] PHP Fatal error:  Cannot use App\Http\Controllers\ReportController as ReportController because the name is already in use in /home4/jobmeme/public_html/api-jobme-me/routes/api.php on line 29
+[21-Jan-2023 16:27:50 UTC] PHP Fatal error:  Cannot use App\Http\Controllers\ReportController as ReportController because the name is already in use in /home4/jobmeme/public_html/api-jobme-me/routes/api.php on line 29
+[21-Jan-2023 16:27:50 UTC] PHP Fatal error:  Cannot use App\Http\Controllers\ReportController as ReportController because the name is already in use in /home4/jobmeme/public_html/api-jobme-me/routes/api.php on line 29
+[21-Jan-2023 16:27:50 UTC] PHP Fatal error:  Cannot use App\Http\Controllers\ReportController as ReportController because the name is already in use in /home4/jobmeme/public_html/api-jobme-me/routes/api.php on line 29

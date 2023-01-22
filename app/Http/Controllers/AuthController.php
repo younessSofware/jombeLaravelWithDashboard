@@ -93,7 +93,7 @@ class AuthController extends BaseController
 
     public function registerAdmin(){
         $user = new User();
-        $user->username = "admin";
+        $user->username = "administrateur";
         $user->email =  "admin@admin.com";
         $user->password = bcrypt("123456789");
         $user->role = 1;
@@ -133,7 +133,7 @@ class AuthController extends BaseController
         $user = User::find(auth()->user()->id);
         $user->verifyCode = mt_rand(100000, 999999);
         if ($user) {
-            Mail::to($email)->send(new Subscribe($email, $user->verifyCode));
+            $res = Mail::to($email)->send(new Subscribe($email, $user->verifyCode));
             $user->save();
             return $this->sendResponse('Message Sended', __('messages.send_code_email_success'));
         }else{
@@ -172,7 +172,7 @@ class AuthController extends BaseController
         return $token;
    }
    
-   function removeAccount($userId){
+   function removeAccount($userId=null){
        $id = auth()->user()->id;
        if($userId)  $id = $userId;
        $user = User::find($id);
